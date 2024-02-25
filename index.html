@@ -1,250 +1,629 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- seo -->
+		<meta name="author" content="CleanBytes 'CleanBytesStudio' ">
+		<meta name="description" content="CleanBytesStudio , computer repairing, computer solution, hardware software solution">
+		<meta name="keywords" content="company,software,hardware,repairing,development">
 
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+		<!-- open graph -->
+		<meta property="og:title" content="comprepair">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="">
+		<meta property="og:description" content="hardware and software solutions">
+		<meta property="og:url" content="">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:site_name" content="cleanbytessolution">
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+		<!-- icon -->
+    <link rel="icon" href="images/128x.png">
 
-        <title>NRC Solutions - Servicii IT</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">TEST PLACEHOLDER</a>
+    <!-- Website Title -->
+    <title>Clean Bytes Solution</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Acasa</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#discover" class="nav__link">Servicii</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="indexfaq.html" class="nav__link">FAQ</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="../assets/pages/contact_form" class="nav__link">Contact</a>
-                        </li>
-						<br>
-                    </ul>
-                    <div class="nav__dark">
-                        <!-- Theme change button -->
-                        <span class="change-theme-name">Dark mode</span>
-                        <i class="ri-moon-line change-theme" id="theme-button"></i>
-                    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
 
-                    <i class="ri-close-line nav__close" id="nav-close"></i>
-                </div>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image">Clean Bytes</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-function-line"></i>
-                </div>
-            </nav>
-        </header>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">ACASA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#service">SERVICII</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#preturi">PRETURI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home" id="home">
-                <img src="assets/img/home1.jpg" alt="" class="home__img">
 
-                <div class="home__container container grid">
-                </div>
-            </section>
-
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <div class="about__container container grid">
-                    <div class="about__data">
-                        <h2 class="section__title about__title"></h2>
-                        <p class="about__description">Device-urile tale scot sunete ciudate sau se supraincalzesc? Este timpul pentru
-                            o <b>diagnosticare gratuita</b> si o mentenanta pe masura asteptarilor tale. Trimite-ne un mesaj cu simptomele
-                            device-ului tau si noi iti vom raspunde in <b>cel mai scurt timp</b>. (inclusiv in weekend!)
-                        </p>
-                        <a href="../assets/pages/contact_form" class="button">Contacteaza-ne</a>
-                    </div>
-
-                    <div class="about__img">
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container" style="margin-top: -7rem;">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1>SOLUTII COMPLETE PENTRU </br><span id="js-rotating">CALCULATOARE,LAPTOP,CONSOLE,HARDWARE - SOFTWARE</span></h1>
+                            <a class="btn-solid-lg page-scroll" href="" target="_blank"><i class=""></i>Instagram</a>
+                            <a class="btn-solid-lg page-scroll" href="https://www.tiktok.com/@cleanbytes" target="_blank"><i class=""></i>Tiktok</a>
+                            <a class="btn-solid-lg page-scroll" href="https://discord.gg/yDrW2gCP" target="_blank"><i class=""></i>Discord</a>
                         </div>
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/bg_heder_nobg.png" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
-                        <div class="about__img-overlay">
-                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!--==================== DISCOVER ====================-->
-            <section class="discover section" id="discover">
-                <h2 class="section__title">Servicii disponibile</h2>
+    <!-- Features -->
+    <div id="service" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2><i class="fas fa-cog fa-spin fa-1x fa-fw"></i>SERVICII</h2>
+                    <div class="p-heading p-large">Oferim o multidudine de servicii pentru clientii nostri. Aici sunt cateva dintre acestea</div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+
+                <!-- Tabs Content-->
+                <div class="tab-content" id="lenoTabsContent">
+                    
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">PC Build</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Mentenanta integrala PC</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Cable management</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Instalare pachet Office</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                                <!-- Image Pane -->
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="images/comp_tech.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+
+                                <!-- Icon Cards Pane -->
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Mentenanta integrala Laptop</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Mentenanta integrala Console</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Instalari software</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Deplasare la domiciliu</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end of icon cards pane -->
+
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                    
+
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+
+                                <!-- Text And Icon Cards Area -->
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-bug"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">ANTIVIRUS</h4>
+                                                <p>Antivirus protects your PC against all internet threats like Ransomware, Trojans, Viruses and other Malware</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-passport"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">WEB DEVELOPMENT</h4>
+                                                <p>Web development is the process of building websites and applications for the internet, or for a private network known as an intranet</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-mask"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">DUAL BOOT</h4>
+                                                <p>In a dual boot computer system, two operating systems are installed on the same hard drive, allowing either OS to be loaded</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-download"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">SOFTWARE INSTALL</h4>
+                                                <p>if you do need to install any software from any manufacturer/company, call us for the support</p>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of icon cards area -->
+                                    
+                                    <div class="text-area">
+                                        <h3>SOFTWARE DEVELOPMENT</h3>
+                                        <p>We provide all software solutions including web development, desktop app development and mobile app development</p>
+                                    </div> <!-- end of text-area -->
+                                </div> <!-- end of col-md-8 -->
+                                <!-- end of text and icon cards area -->
+
+                                <!-- Image Pane -->
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="images/developer1.png" alt="alternative">
+                                </div>
+                                <!-- end of image pane -->
+                                    
+                            </div> <!-- end of row -->
+                        </div> <!-- end of container -->
+                    </div><!-- end of tab-pane -->
+                    <!-- end of tab -->
+
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+
+            </div> <!-- end of row --> 
+        </div> <!-- end of container --> 
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+
+
+    <!-- Details 1 -->
+    <div id="preturi" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="images/goals.png" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>Preturi servicii PC / Laptop</h3>
+                        <p>Acestea sunt fixe si nu vor suferi modificari in functie de complexitatea lucrarii</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">Detalii</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of details 1 -->
+
+
+    <!-- Details 2 -->
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Preturi servicii consola / diverse</h3>
+                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">Detalii</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of second -->
+    </div> <!-- end of basic-3 -->    
+    <!-- end of details 2 -->
+
+
+    <!-- Details Lightboxes -->
+	<!-- Lightbox -->
+	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-12">
+				<h3>Preturi servicii PC / Laptop</h3>
+				<hr>
+                <h4>PC</h4>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Constatare gratuita</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Curatare integrala - 150 RON (curatare, inlocuire pasta termica si thermal pads procesor/placa video)</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Curatare placa video - 100 RON (curatare, inlocuire pasta termica si thermal pads)</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Cable management - 100 RON</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>PC Build (cu piesele voastre, instalare windows 10 gratuita, cable management inclus) - 200 RON</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Inlocuire piesa - 30 RON indiferent de piesa (se pot adauga costuri daca piesa necesita update BIOS / incompabilitati)</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Garantie lucrare 30 zile</td></tr>
+                </table>
+                <h4>Laptop</h4>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Constatare gratuita</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Curatare integrala si inlocuire pasta termica/thermal pads - 150 RON</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Inlocuire display (cu piesa voastra) - 150 RON</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Inlocuire tastaturi incastrare - 100 RON (cu piesa voastra)</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Upgrade RAM / SSD (instalare windows gratuita) - 50 lei</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Garantie lucrare 30 zile</td></tr>
+                </table>
+                <br><br>
+				<a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    
+    <!-- Lightbox -->
+    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
+		<div class="row">
+			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-12">
+				<h3>Preturi servicii consola / diverse</h3>
+                <h4>Consola</h4>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Constatare gratuita</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Curatare integrala (praf, schimbat pasta termica, inlocuire thermal pads) - 150 RON</td></tr>
+                    <tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Garantie lucrare 30 zile</td></tr>
+                </table>
+                <h4>Servicii diverse</h4>
+				<table>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Instalare Windows 10 (cu licenta) - 50 RON</td></tr>
+					<tr><td class="icon-cell"><i class="fas fa-check-square"></i></td><td>Deplasare la domiciliu (doar in zona Brasov) - 30 RON/ora</td></tr>
+                </table>
                 
-                <div class="discover__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== DISCOVER 1 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/discover1.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Mentenanta PC / Laptop</h2>
-                            </div>
-                            <a href="../assets/pages/mentenanta_pc_laptop"> <button class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>
-                            </button> </a>
-                        </div>
+				<a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of lightbox -->
+    <!-- end of details lightboxes -->
+    <!-- Video -->
+    <div id="faq" class="basic-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>INTREBARI FRECVENTE</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#who">Cine sunteti voi?</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#prebuild">Vindeti piese separate sau pre-builds?</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#garantie">Despre garantie</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#trimitere">Cum putem trimite device-ul?</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#testarementenanta">Cum se efectueaza testarea dupa mentemanta / reparatie?</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#reflowreball">Reflow / Reballing?</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#durata">Cand este gata device-ul odata ajuns la voi si care este procesul?</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#serviciioferite">Ce servicii nu putem sa oferim??</a></center>
+                    </div> <!-- end of text-container -->
+                    </br>
+                    <div class="text-container">
+                        <center><a class="btn-solid-reg popup-with-move-anim" href="#plata">Cum se faca plata?</a></center>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of video -->
 
-                        <!--==================== DISCOVER 2 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/discover2.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Mentenanta Consola (Playstation / Xbox)</h2>
-                                <br>
-                            </div>
-                            <a href="../assets/pages/mentenanta_consola.html"> <button class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>
-                            </button> </a>
-                        </div>
-                        <!--==================== DISCOVER 4 ====================-->
-                        <div class="discover__card swiper-slide">
-                            <img src="assets/img/discover4.jpg" alt="" class="discover__img">
-                            <div class="discover__data">
-                                <h2 class="discover__title">Instalari sisteme / alte servicii</h2>
-                            </div>
-                            <a href="../assets/pages/mentenanta_instalari"> <button class="button button--flex place__button">
-                                <i class="ri-arrow-right-line"></i>
-                            </button> </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <div id="who" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Cine sunteti voi?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Clean Bytes Studio s-a nascut din pasiunea pentru tech si nu numai. (mai suntem pasionati si de masini vechi
+                        /off-road)</td></tr>
 
-            <!--==================== VIDEO ====================-->
-            <section class="video section">
-                <h2 class="section__title"></h2>
-
-                <div class="video__container container">
-                    <p class="video__description">
-                    </p>
-
-                    <div class="video__content">
-                        <video id="video-file">
-                            <source src="assets/video/video.mp4" type="video/mp4">
-                        </video>
-
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ==================== LEGAL ==================== -->
-            <section class="sponsor section">
-                <div class="sponsor__container container grid">
-                    <div class="sponsor__content">
-                        <a href="https://anpc.ro/ce-este-sal/"><img src="assets/img/eadv-sal.png" alt="" class=""></a>
-                    </div>
-                    <div class="sponsor__content">
-                        <a href="https://ec.europa.eu/consumers/odr/main/index.cfm"><img src="assets/img/eadv-sol.png" alt="" class=""></a>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content grid">
-                    <div class="footer__data">
-                        <h3 class="footer__title"></h3>
-                        <p class="footer__description">Urmareste-ne<br> ca sa fi mereu la 
-                            curent cu <br> toate postarile
-                        </p>
-                        <div>
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-  <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
-</svg>
-                            </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
-  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
-</svg>
-                            <!-- <a href="https://www.youtube.com/" target="_blank" class="footer__social"> -->
-                                <!-- <i class="ri-youtube-fill"></i> -->
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Informatii utile</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Intrebari frecvete</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Politica de confidentialitate</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Livrare & retur</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="../assets/pages/terms" class="footer__link">Termeni si conditii</a>
-                            </li>
-                            <li>
-                                <a href="https://anpc.ro/" class="footer__link">ANPC</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Date firma</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">CUI</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Nr. registru:</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Contact</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Email: tempadd</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Venind in ajutorul vostru pentru identificarea si rezolvarea problemelor intampinate de device-ul vostru in cel mai rapid si profesional
+                    mod</td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
             </div>
-        </footer>
-         <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line scrollup__icon"></i>
-        </a>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
 
-        <!--=============== SCROLL REVEAL===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-        
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+    <div id="prebuild" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Vindeti piese separat sau pre-builds?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Clean Bytes Studio <b>NU</b> vinde piese sub nici o forma si nici nu facem pre-builds pentru a fi puse spre vanzare pentru profit.
+                        In schimb, va putem ajuta in cazul unei piese defecte, discutand in prealabil cu voi ce este de schimbat/upgrade necesar/etc.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Daca in procesul de mentenanta/reparare se constanta un posibil upgrade sau una din piesele clientului
+                    ajunge defecta la noi (ex: GPU nu afiseaza display / ledul VGA aprins pe MB), noi vom recomanda schimbarea piesei respective si vom studia posibilitatile impreuna cu beneficiarul.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Oferim asamblare de orice tip a unui build dorit de client, instalarea windows-ului fiind gratuita.</td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <div id="garantie" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Despre garantie</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Lucrarea efectuata beneficiaza de garantie 30 de zile de la data preluarii coletului de catre beneficier.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td><b>NU</b> se ofera garantie pe componentele care nu au fost reparate de noi.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td><b>NU</b> face obiectul garantiei o eventuala lucrare nereusita de catre terti, garantia pe lucrarea efectuata de noi pierzanduse fara negociere.
+                    </td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td><b>OFERIM</b> transport gratuit (tur-retur) pentru coletele care nu sunt conform cu asteptarile
+                        clientului si situatia necesita verificarea lucrarii efectuate.
+                    </td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <div id="trimitere" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Cum putem trimite device-ul?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Device-urile se pot trimit doar prin curier <font color=red><b>SAMEDAY</b></font>. Coletele trimise prin alta firma nu vor fi preluate.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td><b>Coletele trimise trebuie sa fie ambalate foarte bine, 2-3 straturi de folie cu bule /
+                        carton extra pentru a preveni eventuale daune in timpul transportului.</b></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Acestea din urma nu fac obiectul unei garantii si nu ne facem raspunzatori pentru impachetarea in timpul transportului catre noi.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td><b>Nu uitati sa ne contactati inainte sa trimiteti device-uri sau piese!!</b></td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <div id="testarementenanta" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Cum se efectueaza testarea dupa mentenanta / reparatie?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Toate device-urile se testeaza in Furmark 3d odata terminat procesul de mentenanta pentru verificarea temperaturilor.</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>In cazul inlocuirii, testarea se face direct pe componenta, in functie de piesa.</td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <div id="reflowreball" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Reflow / Reballing placi video?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Momentan nu oferim acest serviciu.</td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <div id="durata" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Cand este gata device-ul odata ajuns la voi si care este procesul?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Odata receptionat de catre noi, lucrarea poate dura pana la 12-48h, aceasta fiind
+                        predata curierului inapoi catre beneficiar ziua urmatoare. (sau in aceeasi zi in functie de disponibilitatea curierului)</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Procesul incepe prin despachetare, constatare <b>(NU FACEM CONSTATARE REMOTE)</b>, inceperea procesului efectiv de mentenanta / inlocuire.</b></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Acest proces este filmat integral si trimis beneficiarului. (daca se solicita in prealabil)</b></td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Beneficiarul poate sa asiste la lucrare (daca este din acelasi oras, Brasov) si isi
+                        poate ridica  device-ul in aceeasi zi. De asemenea, ridicam si livram device-ul la domiciliu <b>doar</b> in zona Brasov.
+                    </td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <div id="serviciioferite" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Ce servicii nu putem sa oferim?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Diagnosticare la distanta;</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Nu refacem circuite intrerupte / trasee / cositorie;</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Nu modam console;</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Reflow / Reballing;</td></tr>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Nu montam paduri de cupru / metal lichid. (PS5)</td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <div id="plata" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-12">
+                <center><h3>Cum se faca plata?</h3></center>
+                <table>
+                    <tr><td class="icon-cell"><i class="fas"></i></td><td>Plata se poate face la primirea coletului de catre beneficiar (ramburs) sau odata
+                        cu trimiterea acestuia prin transfer bancar, lucrarea incepand la confirmarea platii.</td></tr>
+                </table>
+                <a class="btn-outline-reg mfp-close as-button" href="#details">Inapoi</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+
+    <!-- Contact -->
+    <div id="contact" class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>CONTACT</h2>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address">Nu ezita sa intri inlegatura cu noi pentru o oferta sau mai multe detalii</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bulevardul Garii, nr 25, Brasov - 500232</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:+40745375564">Cristian - Whatsapp</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:cleanbytesstudio@outlook.com">cleanbytesstudio@outlook.com</a></li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form -->
+    <!-- end of contact -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2024 <u>Clean Bytes Studio.</u> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
 </html>
