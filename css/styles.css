@@ -31,6 +31,7 @@ Table Of Contents:
 Colors:
 
 - Text, navbar links - white #f1f1f8
+- Lexa support color - #FFC0CB
 - Buttons, bullets, icons - turquoise #00c9db
 - Navbar - navy #4633af
 - Backgrounds - dark denim #262431
@@ -132,7 +133,7 @@ a.white {
 }
 
 .btn-solid-reg {
-	display: inline-block;
+	display: inline-flex;
 	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
 	border: 0.125rem solid #00c9db;
 	border-radius: 2rem;
