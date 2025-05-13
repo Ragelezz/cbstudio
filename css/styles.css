@@ -2099,6 +2099,80 @@ a:hover.back-to-top {
 	.ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
 	}
+	#chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #00c9db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+#chatbot-window {
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+}
+
+#chat-header {
+  background: #00c9db;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#chat-input {
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+
+#chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+#chat-input button {
+  padding: 10px;
+  background: #00c9db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.message {
+  margin: 5px 0;
+}
+
+.message.bot {
+  color: #000000;
+}
+
+.message.user {
+  text-align: right;
+}
 	/* end of extra pages */
 }
 /* end of min-width width 1200px */
