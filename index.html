@@ -67,6 +67,9 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link page-scroll" href="https://4fund.com/ro/amt5m5"><font color="#FFC0CB">Support Lexa's surgery!</font></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link page-scroll" href="#header">ACASA</a>
                 </li>
                 <li class="nav-item">
@@ -550,8 +553,8 @@
                     <h2>CONTACT</h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Intra in legatura cu noi pentru o oferta sau mai multe informatii</li>
-                        <li><i class="fas fa-map-marker-alt"></i>Bucuresti, Sector 6</li>
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:+40764">Cristian - Whatsapp</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i>Bulevardul Garii, nr 25, Brasov - 500232</li>
+                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:+40745375564">Cristian - Whatsapp</a></li>
                         <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:contact@cbstudio.ro">contact@cbstudio.ro</a></li>
                     </ul>
                 </div> <!-- end of col -->
@@ -565,14 +568,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2025 <u>Clean Bytes Studio.</u> - All rights reserved</p>
+                    <p class="p-small">Copyright © 2024 <u>Clean Bytes Studio.</u> - All rights reserved</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright -->
     <!-- end of copyright -->
 
+<!-- Buton plutitor pentru deschiderea chatului -->
+<button id="chatbot-toggle">💬</button>
 
+<!-- Fereastra de chat -->
+<div id="chatbot-window">
+  <div id="chat-header">Clean Byte Bot</div>
+  <div id="chat-body">
+    <div class="message bot">Salut! Cu ce te pot ajuta?</div>
+  </div>
+  <div id="chat-input">
+    <input type="text" id="user-input" placeholder="Scrie un mesaj..." />
+    <button onclick="sendMessage()">Trimite</button>
+  </div>
+</div>
+
+<!-- Efect sonor la deschidere -->
+<audio id="chat-sound" src="https://www.soundjay.com/buttons/sounds/button-29.mp3" preload="auto"></audio>
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
@@ -583,5 +602,40 @@
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+	<script>
+  const toggleBtn = document.getElementById('chatbot-toggle');
+  const chatWindow = document.getElementById('chatbot-window');
+  const chatSound = document.getElementById('chat-sound');
+  let isOpen = false;
+
+  toggleBtn.addEventListener('click', () => {
+    isOpen = !isOpen;
+    chatWindow.style.display = isOpen ? 'flex' : 'none';
+    if (isOpen) chatSound.play();
+  });
+
+  function sendMessage() {
+    const input = document.getElementById('user-input');
+    const message = input.value.trim();
+    if (message === '') return;
+
+    const chatBody = document.getElementById('chat-body');
+
+    // Mesajul utilizatorului
+    const userMsg = document.createElement('div');
+    userMsg.className = 'message user';
+    userMsg.textContent = message;
+    chatBody.appendChild(userMsg);
+
+    // Răspuns bot (dummy)
+    const botMsg = document.createElement('div');
+    botMsg.className = 'message bot';
+    botMsg.textContent = 'Momentan nu stiu sa raspund la asta 🙂';
+    chatBody.appendChild(botMsg);
+
+    input.value = '';
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+</script>
 </body>
 </html>
